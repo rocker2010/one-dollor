@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if IE]>
+<script type="text/javascript" src="css/js/html5.min.js"></script>
+<![endif]-->
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="css/js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#share").click(function(){
+		$("body").append("<div class='maskA'><div><img src='css/images/jiantou.png' height='170'></div></div>");
+		$(".maskA").click(function(){
+       $(".maskA").remove();
+        })
+		});
+})</script>
+<title>1元购</title>
+</head>
+
+<body style="background: rgba(110,0,0,1);">
+<article id="content" style="margin-top:0px; margin-bottom:0; overflow:hidden;background: url(&quot;images/share.jpg&quot;) no-repeat;background-size: 100%;height: 100%;position: absolute;">
+<div class="gundong b wh">
+          <div id="mBox" style="width: 350px;">
+            <m id="mL" class="ell f13"><span>恭喜 郭靖 获得第（145）期 iphone 5s 一部。</span><span>恭喜 柯镇恶 获得第（135）期 iphone 5s 一部。</span><span>恭喜 裘千仞 获得第（135）期 iphone 5s 一部。</span><span>恭喜 黄蓉 获得第（135）期 iphone 5s 一部。</span><span>恭喜 郭靖 获得第（145）期 iphone 5s 一部。</span><span>恭喜 柯镇恶 获得第（135）期 iphone 5s 一部。</span><span>恭喜 裘千仞 获得第（135）期 iphone 5s 一部。</span><span>恭喜 黄蓉 获得第（135）期 iphone 5s 一部。</span><span>恭喜 郭靖 获得第（145）期 iphone 5s 一部。</span><span>恭喜 柯镇恶 获得第（135）期 iphone 5s 一部。</span><span>恭喜 裘千仞 获得第（135）期 iphone 5s 一部。</span><span>恭喜 黄蓉 获得第（135）期 iphone 5s 一部。</span></m>
+            <m id="mLCopy" class="ell f13"><span>恭喜 郭靖 获得第（145）期 iphone 5s 一部。</span><span>恭喜 柯镇恶 获得第（135）期 iphone 5s 一部。</span><span>恭喜 裘千仞 获得第（135）期 iphone 5s 一部。</span><span>恭喜 黄蓉 获得第（135）期 iphone 5s 一部。</span><span>恭喜 郭靖 获得第（145）期 iphone 5s 一部。</span><span>恭喜 柯镇恶 获得第（135）期 iphone 5s 一部。</span><span>恭喜 裘千仞 获得第（135）期 iphone 5s 一部。</span><span>恭喜 黄蓉 获得第（135）期 iphone 5s 一部。</span><span>恭喜 郭靖 获得第（145）期 iphone 5s 一部。</span><span>恭喜 柯镇恶 获得第（135）期 iphone 5s 一部。</span><span>恭喜 裘千仞 获得第（135）期 iphone 5s 一部。</span><span>恭喜 黄蓉 获得第（135）期 iphone 5s 一部。</span></m>
+          </div>
+        </div>
+<div class="tc mt10 mb10 " style="position: absolute;bottom: 40px;width:100%">
+<a href="javascript:void(0)" class="abtn f18 mr15" id="share" style="background: yellow;padding: 10px;">马上开始抢</a><a href="main.html" class="abtn f18" style="background: yellow;padding: 10px;">看啥呢？还不动手！</a></div>
+</article>
+<script type="text/javascript" src="css/js/js.js"></script> 
+<script type="text/javascript">
+//-----------------------左侧无缝滚动-----------------------
+var speed=30; //数字越大速度越慢
+var tab=document.getElementById("mBox");
+var tab1=document.getElementById("mL");
+var tab2=document.getElementById("mLCopy");
+$("#mBox").width($("#mBox").parent().width());
+$("#content").resize(function(){$("#mBox").width($("#mBox").parent().width())});
+tab2.innerHTML=tab1.innerHTML;
+function Marquee(){
+if(tab2.offsetWidth-tab.scrollLeft<=0)
+tab.scrollLeft-=tab1.offsetWidth
+else{
+tab.scrollLeft++;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.onmouseover=function() {clearInterval(MyMar)};
+tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+//-----------------------左侧无缝滚动结束-----------------------</script>
+</body>
+</html>

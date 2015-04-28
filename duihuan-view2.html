@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<!--<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0"/>-->
+<!--[if IE]>
+<script type="text/javascript" src="css/js/html5.min.js"></script>
+<![endif]-->
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="css/js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(".mainList .year .list").each(function (e, target) {
+	    var $target=  $(target),
+	        $ul = $target.find("ul");
+	    $target.height($ul.outerHeight()), $ul.css("position", "absolute");
+	});
+	
+$(document).ready( function() {
+	//底部菜单
+	$(".toggle").click(function(){
+		$(this).toggleClass("sel");
+		$(".nav").toggle();
+		vh=$(".nav").height()+64;
+		if($(".nav").is(":visible")==false){
+			$("#content").css("margin-top","54px");}else{$("#content").css("margin-top",vh);}
+		})
+//底部菜单结束
+//顶部菜单
+$(".naf").click(function(){
+	if($("ul",$(this)).hasClass("sel")){
+    $("ul",$(this)).removeClass("sel");}
+     else {
+			 $("#footer").find(".sel").removeClass("sel");
+			 $("ul",$(this)).attr("class","sel"); }
+	})
+//顶部菜单结束
+	$(".mainList .year>h2>a").click(function (e) {
+	    e.preventDefault();
+	    $(this).parents(".year").toggleClass("close");
+	});
+	//
+	$('#tabHis a').click(function(){
+		$('#tabHis').find(".active").removeClass("active");
+		$(this).parents('td').addClass("active");})
+	//
+	$('.viewC').click(function(){
+		$(this).parents('.cls').find('.more').toggle();
+		})
+});
+</script>
+<title>1元购</title>
+</head>
+
+<body>
+<header class="p5" id="header"><a href="javascript:history.go(-1)" class="abs M-left cb wt60 f16 db">返回</a><a href="index.html" class="abs M-right db wt50"><img src="css/images/logo.png" alt="" width="40"></a>
+  <div class="toggle">查看全部产品</div>
+</header>
+<nav class="nav"> <a href="list.html"><span class="f12">3C产品</span></a> <a href="list.html"><span class="f12">创意产品</span></a><a href="list.html"><span class="f12">创意产品</span></a> <a href="list.html"><span class="f12">健康产品</span></a> <a href="list.html"><span class="f12">生活类</span></a> <a href="list.html"><span class="f12">美妆护肤</span></a><a href="list.html"><span class="f12">保健食品</span></a></nav>
+<article id="content">
+  <section class="pro">
+    <ul>
+      <li class="probox bgl line2 box mb0">
+        <div class="flex1 tc mr15">
+          <div class="proImg"><a href="view.html"><img src="images/pro.jpg" alt=""></a></div>
+        </div>
+        <div class="flex5 pw">
+          <h1 class="f18"><span class="nb mr5 cr">(第488期)</span>iPhone6 4.7英寸 128G <span class="cr">至大之作,亦是至薄之作(颜色随机)</span></h1>
+          <p class="mt10 mb10 f18"><span class="mr5">兑换数量：2</span>
+          </p>
+          <p class="rel f18"><i class="jb"></i><span class="pl30">总需：<span class=" cgr">9388</span> 枚天狮金币</span></p>
+        </div>
+      </li>
+    </ul>
+    <div class="bgwh f14" style="padding:10px;">
+      <div class="note p10">
+        <p class="mb10 ovh"><span class="b">姓  名：</span>江泽民</p>
+        <p class="mb10 ovh"><span class="b">手机号：</span>15265478451</p>
+        <p class="mb10 ovh"><span class="b">邮  箱：</span>4554545@5565656.com</p>
+        <p class="mb10 ovh"><span class="b">地  址：</span>天空你发快递间洒落就疯狂大楼将斯卡拉解放东路就爱上了</p>
+      </div>
+      <div class="inline_box">
+      <div class="inline_two pr10 bbox"><input type="button" class="btn f16 pct100 mt10" value="返回修改"></div>
+      <div class="inline_two pl10 bbox"><input type="button" class="btn f16 pct100 mt10" value="确认兑换"></div>
+      </div>
+    </div>
+  </section>
+</article>
+<footer id="footer" class="fix inline_box">
+  <div id="butten1" class="sel inline_three naf"><a href="http://eshop.tiens.com" target="_blank" class="f14"><strong>移动商城</strong></a></div>
+  <div id="butten2" class="inline_three naf"><a href="javascript:void(0)" class="f14"><strong>精彩活动</strong></a>
+    <ul>
+      <li><a href="sd-jilu.html" class="f14">晒单记录</a></li>
+      <li><a href="xywj.html" class="f14">幸运玩家</a></li>
+      <li><a href="falv.html" class="f14">法律声明</a></li>
+    </ul>
+  </div>
+  <div id="butten2" class="inline_three naf"><a href="javascript:void(0)" class="no f14"><strong>个人中心</strong></a></span>
+    <ul>
+      <li><a href="goldcoin.html" class="f14">我的金币</a></li>
+      <li><a href="goldcoin-jilu.html" class="f14">金币收支</a></li>
+      <li><a href="duihuan.html" class="f14">我的兑换</a></li>
+      <li><a href="cyjilu.html" class="f14">参与记录</a></li>
+      <li><a href="guanzhu.html" class="f14">关注列表</a></li>
+      <li><a href="TiensCloud/myspace.html" class="f14">我的云空间</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

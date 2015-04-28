@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if IE]>
+<script type="text/javascript" src="css/js/html5.min.js"></script>
+<![endif]-->
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="css/js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+		$(".toggle").click(function(){
+		$(this).toggleClass("sel");
+		$(".nav").toggle();
+vh=$(".nav").height()+64;
+		if($(".nav").is(":visible")==false){
+			$("#content").css("margin-top","54px");}else{$("#content").css("margin-top",vh);}
+		})
+
+$(".naf").click(function(){
+	if($("ul",$(this)).hasClass("sel")){
+    $("ul",$(this)).removeClass("sel");}
+     else {
+			 $("#footer").find(".sel").removeClass("sel");
+			 $("ul",$(this)).attr("class","sel");}
+	})
+})
+</script>
+<title>1元购</title>
+</head>
+
+<body>
+<header class="p5" id="header"><a href="javascript:history.go(-1)" class="abs M-left cb wt60 f16 db">返回</a><a href="index.html" class="abs M-right db wt50"><img src="css/images/logo.png" alt="" width="40"></a>
+  <div class="toggle">查看全部产品</div>
+</header>
+<nav class="nav"> <a href="list.html"><span class="f12">3C产品</span></a> <a href="list.html"><span class="f12">创意产品</span></a> <a href="list.html"><span class="f12">健康产品</span></a> <a href="list.html"><span class="f12">生活类</span></a> <a href="list.html"><span class="f12">美妆护肤</span></a><a href="list.html"><span class="f12">保健食品</span></a></nav>
+<article id="content">
+  <section class="p10 f14">
+    <h1 class="p5 line mb10 f18"><img src="css/images/jb.png" alt="" width="30" class="mr10 vb">我拥有的天狮金币: <span class="cr vb">0</span></h1>
+    <div class="note p10 mt10 mb20">
+    <p class="line pb10 mb10 f18">订单号：adfksd45874512547845</p>
+    <p class="line pb10 mb10"> 支付方式：卓越卡支付</p>
+    <p class="line pb10 mb10"> 支付密码：<input type="text" size="15"></p>
+    <p class="">支付金额：<span class="b cr">500</span></p>
+    </div>
+    
+    <input type="button" class="btn db mb10 pct100 f16" value="确认支付">
+      
+    </div>
+  </section>
+</article>
+<footer id="footer" class="fix inline_box">
+  <div id="butten1" class="sel inline_three naf"><a href="http://eshop.tiens.com" target="_blank" class="f14"><strong>移动商城</strong></a></div>
+  <div id="butten2" class="inline_three naf"><a href="javascript:void(0)" class="f14"><strong>精彩活动</strong></a>
+    <ul>
+      <li><a href="sd-jilu.html" class="f14">晒单记录</a></li>
+      <li><a href="xywj.html" class="f14">幸运玩家</a></li>
+<li><a href="falv.html" class="f14">法律声明</a></li>
+    </ul>
+  </div>
+  <div id="butten2" class="inline_three naf"><a href="javascript:void(0)" class="no f14"><strong>个人中心</strong></a></span>
+    <ul>
+       <li><a href="goldcoin.html" class="f14">我的金币</a></li>
+      <li><a href="goldcoin-jilu.html" class="f14">金币收支</a></li>
+<li><a href="duihuan.html" class="f14">我的兑换</a></li>
+      <li><a href="cyjilu.html" class="f14">参与记录</a></li>
+      <li><a href="guanzhu.html" class="f14">关注列表</a></li>
+      <li><a href="TiensCloud/myspace.html" class="f14">我的云空间</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

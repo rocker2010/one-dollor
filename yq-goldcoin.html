@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if IE]>
+<script type="text/javascript" src="css/js/html5.min.js"></script>
+<![endif]-->
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="css/js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+		$(".toggle").click(function(){
+		$(this).toggleClass("sel");
+		$(".nav").toggle();
+vh=$(".nav").height()+64;
+		if($(".nav").is(":visible")==false){
+			$("#content").css("margin-top","54px");}else{$("#content").css("margin-top",vh);}
+		})
+
+$(".naf").click(function(){
+	if($("ul",$(this)).hasClass("sel")){
+    $("ul",$(this)).removeClass("sel");}
+     else {
+			 $("#footer").find(".sel").removeClass("sel");
+			 $("ul",$(this)).attr("class","sel");}
+	})
+})
+</script>
+<title>1元购</title>
+</head>
+
+<body>
+<header class="p5" id="header"><a href="javascript:history.go(-1)" class="abs M-left cb wt60 f16 db">返回</a><a href="index.html" class="abs M-right db wt50"><img src="css/images/logo.png" alt="" width="40"></a>
+  <div class="toggle">查看全部产品</div>
+</header>
+<nav class="nav"> <a href="list.html"><span class="f12">3C产品</span></a> <a href="list.html"><span class="f12">创意产品</span></a> <a href="list.html"><span class="f12">健康产品</span></a> <a href="list.html"><span class="f12">生活类</span></a> <a href="list.html"><span class="f12">美妆护肤</span></a><a href="list.html"><span class="f12">保健食品</span></a></nav>
+<article id="content">
+  <section class="p10">
+    <h1 class="p5 line mb10 f18"><img src="css/images/jb.png" alt="" width="30" class="mr10 vb">我拥有的天狮金币: <span class="cr vb">1250</span><a href="goldcoin.html" class="ml10 cbl nb">[获得金币]</a></h1>
+    <p class="title f18 mb10">您已成功邀请好友  <span class="cr b">3</span> 人，邀请5人就能终身享受9折优惠！</p>
+    <div class="inline_box mb10"><div class="inline_five"><i class="iconRen note4 cr"></i></div><div class="inline_five"><i class="iconRen note4 ml5 cr"></i></div><div class="inline_five"><i class="iconRen note4 ml5 cr"></i></div><div class="inline_five"><i class="iconRen note3 ml5 bgwh cg"></i></div><div class="inline_five"><i class="iconRen note3 ml5 bgwh cg"></i></div></div>
+    <p class="title f18 mb10">获赠： <span class="cr b">0.5 枚天狮金币</span></p>
+    <p class="title f18 mb10">活动折扣畅享： <span class="cr b">0.95</span></p>
+    <p class="title f18 mb10">我的影响力： <span class="cr b">1254</span></p>
+    <div class="note3 p10 mt10">
+    <img src="images/duobao.jpg" alt="" class="pct100">
+      <p>
+        <textarea cols="4" rows="10" class="pct100 mb10">
+1. 邀请微信好友一起参与"壹元夺宝"活动，好友注册成功即可直接获赠0.5枚天狮金币，您也可以获赠0.1枚天狮金币。
+2. 成功邀请五位及以上好友参与夺宝，您便可享受每期投入9折的优惠，即您只需要花费0.9金币即可参与一期夺宝。
+3. 注意：邀请赠金币活动仅面向使用过积分兑换或购买过天狮下载券的用户开放。
+邀请越多优惠越多，叫上好友一起来夺宝，还等什么，马上开始行动吧~~
+</textarea>
+      </p>
+      <p class="mb10"><a href="#" class="abtn bgr wh db tc h24 lh25">即刻邀请好友参与夺宝
+</a></p>
+    </div>
+  </section>
+</article>
+<footer id="footer" class="fix inline_box">
+  <div id="butten1" class="sel inline_three naf"><a href="http://eshop.tiens.com" target="_blank" class="f14"><strong>移动商城</strong></a></div>
+  <div id="butten2" class="inline_three naf"><a href="javascript:void(0)" class="f14"><strong>精彩活动</strong></a>
+    <ul>
+      <li><a href="sd-jilu.html" class="f14">晒单记录</a></li>
+      <li><a href="xywj.html" class="f14">幸运玩家</a></li>
+<li><a href="falv.html" class="f14">法律声明</a></li>
+    </ul>
+  </div>
+  <div id="butten2" class="inline_three naf"><a href="javascript:void(0)" class="no f14"><strong>个人中心</strong></a></span>
+    <ul>
+       <li><a href="goldcoin.html" class="f14">我的金币</a></li>
+      <li><a href="goldcoin-jilu.html" class="f14">金币收支</a></li>
+<li><a href="duihuan.html" class="f14">我的兑换</a></li>
+      <li><a href="cyjilu.html" class="f14">参与记录</a></li>
+      <li><a href="guanzhu.html" class="f14">关注列表</a></li>
+      <li><a href="TiensCloud/myspace.html" class="f14">我的云空间</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

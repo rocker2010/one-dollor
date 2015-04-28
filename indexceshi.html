@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="Photobooth.css">
+<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="photobooth_min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$( '#example' ).photobooth().on( "image", function( event, dataUrl ){
+		$( "#gallery" ).show().html( '<img src="' + dataUrl + '" >');
+	});
+
+	/**
+	* Tab boxes
+	*/
+	$( '.tab_container' ).each(function( i, elem ){
+		$( elem ).find( ".tabs li" ).click(function(){
+			$( elem ).find( ".tabs li.selected" ).removeClass( "selected" );
+			$( this ).addClass( "selected" );
+			$( elem ).find( ".tab_content" ).hide();
+			$( elem ).find( ".tab_content." + $(this).attr( "calls" ) ).show();
+		});
+	});
+
+	/**
+	* Link highlighting
+	*/
+	$( "a" ).click(function(){
+		$( "#nav a.selected" ).removeClass( "selected" );
+		$( "#nav a[href=" + $(this).attr( "href" ) + "]" ).addClass( "selected" );
+	});
+});
+</script>
+<title>无标题文档</title>
+</head>
+
+<body>
+<article>
+<h1>摄像拍照</h1>
+<div id="example"></div>
+<div id="gallery"></div>
+</article>
+</body>
+</html>

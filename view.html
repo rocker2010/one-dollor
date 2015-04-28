@@ -1,0 +1,550 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<!--<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0"/>-->
+<!--[if IE]>
+<script type="text/javascript" src="css/js/html5.min.js"></script>
+<![endif]-->
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="css/js/jquery.min.js"></script>
+<script type="text/javascript" src="css/js/jquery.easytabs.js"></script>
+<script type="text/javascript">
+	$(".mainList .year .list").each(function (e, target) {
+	    var $target=  $(target),
+	        $ul = $target.find("ul");
+	    $target.height($ul.outerHeight()), $ul.css("position", "absolute");
+	});
+	
+$(document).ready( function() {
+	//底部菜单
+	$(".toggle").click(function(){
+		$(this).toggleClass("sel");
+		$(".nav").toggle();
+vh=$(".nav").height()+64;
+		if($(".nav").is(":visible")==false){
+			$("#content").css("margin-top","54px");}else{$("#content").css("margin-top",vh);}
+		})
+//底部菜单结束
+//顶部菜单
+$(".naf").click(function(){
+	if($("ul",$(this)).hasClass("sel")){
+    $("ul",$(this)).removeClass("sel");}
+     else {
+			 $("#footer").find(".sel").removeClass("sel");
+			 $("ul",$(this)).attr("class","sel"); }
+	})
+//顶部菜单结束
+	$(".mainList .year>h2>a").click(function (e) {
+	    e.preventDefault();
+	    $(this).parents(".year").toggleClass("close");
+	});
+	//
+	$('#tab-container').easytabs();
+	$('#tabHis a').click(function(){
+		$('#tabHis').find(".active").removeClass("active");
+		$(this).parents('td').addClass("active");})
+	//
+	$('.viewC').click(function(){
+		$(this).parents('.cls').find('.more').toggle();
+		})
+});
+</script>
+<title>1元购</title>
+</head>
+
+<body>
+<header class="p5" id="header"><a href="javascript:history.go(-1)" class="abs M-left cb wt60 f16 db">返回</a><a href="index.html" class="abs M-right db wt50"><img src="css/images/logo.png" alt="" width="40"></a><div class="toggle">查看全部产品</div></header>
+<nav class="nav"> <a href="list.html"><span class="f12">3C产品</span></a> <a href="list.html"><span class="f12">创意产品</span></a> <a href="list.html"><span class="f12">健康产品</span></a> <a href="list.html"><span class="f12">生活类</span></a> <a href="list.html"><span class="f12">美妆护肤</span></a><a href="list.html"><span class="f12">保健食品</span></a></nav>
+<article id="content">
+  <section class="pro">
+    <ul>
+      <li class="probox bgl line2 box">
+        <div class="flex1 tc mr15"><div class="proImg"><a href="view.html"><img src="images/pro.jpg" alt=""></a></div><p class="mt5">您已参与 <span class="b">15</span> 金币</p><a href="view.html" class="abtn xq">查看详情</a></div>
+        <div class="flex5 pw">
+          <h1 class="f18"><span class="nb mr5 cr">(第488期)</span>iPhone6 4.7英寸 128G <span class="cr">至大之作,亦是至薄之作(颜色随机)</span></h1>
+          <p class="f12 mb10 mt10">城市参数：<span class="cr">21147</span> 天津市（纬度 211.4785）</p>
+          <p class="p5 rel"><i class="jb"></i><span class="pl30">总需：<span class="cb">9388</span> 枚天狮金币</span></p>
+          <div class="process-bar skin-red">
+            <div class="pb-wrapper">
+              <div class="pb-container">
+                <div class="pb-text">30%</div>
+                <div class="pb-value" style="width:30%"></div>
+              </div>
+            </div>
+          </div>
+          <p class="tr f12 cg mtd5 rel"><span class="abs l0">已参与：<span class="cb b">217</span></span>剩余：<span class="cb b">2137</span></p>
+          <p class="mt10"><span class="mr5">参与：<i class="min"></i>
+          <input type="text" value="1" size="4" class="tc h33 mr5 ml5" id=""><i class="add"></i></span>金币<!--<span class="mr10">
+          <select name="zheshishenme" class="tc h33">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>期</span>-->
+          <input type="button" class="btn f16" value="参与夺宝">
+          <div class="line pb10 mb10"></div>
+          <div class="zhe"><input type="button" class="btn f16 yellowbtn mr10 pct100 int25" value="2000金币，直接兑换"></div>
+          <p class="f12 cg mt5">有效期限：15/01/20——15/02/25</p>
+          </div></p>
+        </div>
+      </li>
+    </ul>
+    <div id="tab-container" class="mt10 p10 mb10">
+      <ul class="mt">
+        <li><a class="tab1" href="#tabcontent1">产品详情</a></li>
+        <li><a class="tab2" href="#tabcontent2">本期参与记录</a></li>
+        <li><a class="tab3" href="#tabcontent3">开奖信息</a></li>
+      </ul>
+      <div class="tab-container p10">
+        <div id="tabcontent1" style="display: none;" ><div class="loading">正在加载中......</div><div class="f0"><img src="images/6165d9ec053fc6a666220c9bc5ce5831.png" alt="" class="pct100"><img src="images/3fbc5f190c5e9a426c342f95d3a8b8cc.jpg" alt="" class="pct100"><img src="images/630a1b827d8595ba7780d09d6a52f2a5.jpg" alt="" class="pct100"><img src="images/c1b75ec247f7803e107a938fa46196bc.jpg".jpg" alt="" class="pct100"><img src="images/a23e1123106da14815509451a204fc1e.jpg".jpg" alt="" class="pct100"><img src="images/0ed2480dbf1fa48f424e7fb0ebf96eaf.jpg" alt="" class="pct100"></div></div>
+        <div style="display: none;" id="tabcontent2">
+          <div class="mainList">
+            <h1 class="title">&nbsp;</h1>
+            <div class="year">
+              <h2><a href="#">2014.11.20<i></i></a></h2>
+              <div class="list">
+                <ul>
+                  <li class="cls highlight">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">夺宝夺夺夺 参与了<span class="cr b">2人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="year">
+              <h2><a href="#">2014.11.20<i></i></a></h2>
+              <div class="list">
+                <ul>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">夺宝夺夺夺 参与了<span class="cr b">2人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="year">
+              <h2><a href="#">2014.11.20<i></i></a></h2>
+              <div class="list">
+                <ul>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">夺宝夺夺夺 参与了<span class="cr b">2人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="year">
+              <h2><a href="#">2014.11.20<i></i></a></h2>
+              <div class="list">
+                <ul>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">夺宝夺夺夺 参与了<span class="cr b">2人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                  <li class="cls">
+                    <p class="date">23:25:32 125</p>
+                    <p class="intro"><a href="javascript:void(0)" class="viewC tdl">MIXMYAWA参与了<span class="cr b">5人次</span></a></p>
+                    <p class="version">&nbsp;</p>
+                    <div class="more">
+                      <p>夺奖号码：</p>
+                      <p><b>10001063</b><b>10001553</b><b>10003271</b><b>10002609</b><b>10001157</b></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tabcontent3">
+          <table width="100%" border="0" class="tab" id="tabHis">
+            <tr>
+              <td class="active"><a href="javascript:void(0)">第 154 期</a></td>
+              <td><a href="javascript:void(0)">第 153 期</a></td>
+              <td><a href="javascript:void(0)">第 152 期</a></td>
+              <td><a href="javascript:void(0)">第 151 期</a></td>
+            </tr>
+            <tr>
+              <td><a href="javascript:void(0)">第 150 期</a></td>
+              <td><a href="javascript:void(0)">第 149 期</a></td>
+              <td><a href="javascript:void(0)">第 148 期</a></td>
+              <td><a href="javascript:void(0)">第 147 期</a></td>
+            </tr>
+            <tr>
+              <td><a href="javascript:void(0)">第 146 期</a></td>
+              <td><a href="javascript:void(0)">第 145 期</a></td>
+              <td><a href="javascript:void(0)">第 144 期</a></td>
+              <td><a href="javascript:void(0)">第 143 期</a></td>
+            </tr>
+          </table>
+          <div class="mt10 mb10 ovh p5"><a href="#" class="nextBtn r mr15">下一页</a><a href="#" class="nextBtn r">上一页</a> </div>
+          <h1 style="border-bottom: 3px rgb(197, 140, 20) solid;" class="f18">第 154 期</h1>
+          <h2 class="tc cr f24 mb10 p10 bacLine"><b class="king">本期幸运号码:10006781</b></h2>
+          <div class="note3 p10 mb10">
+            <div class="mb10">
+              <p>恭喜 <span class="b cbl">栩栩如生 (天津市)</span> 获得了本期奖品</p>
+              <p>用户ID：22645876 (ID为用户唯一不变标识)</p>
+              <hr>
+              <p>揭晓时间：2014-11-19 21:12:30.310</p>
+              <p>夺宝时间：2014-11-19 17:45:17.596</p>
+            </div>
+            <div class="note2 p5">
+              <p class="b">奖品获得者本期总共参与了10人次</p>
+              <p>Ta的号码: </p>
+              <p><span class="dib mr10">10006781</span><span class="dib mr10">10001892</span><span class="dib mr10">10007475</span><span class="dib mr10">10004707</span><span class="dib mr10">10004046</span><span class="dib mr10">10006660</span><span class="dib mr10">10006017</span><span class="dib mr10">10002115</span><span class="dib mr10">10000330</span><span class="dib mr10">10007683</span></p>
+            </div>
+          </div>
+          <div class="note p10 tc mb10">您没有参与本次夺宝</div>
+          <div class="mb10">
+            <h3>计算公式</h3>
+            <!--<div class="ovh">
+            <div class="l pct90"><div class="note3 p5 tc f10"><span class="cr b db f13">本期幸运号码</span>10006781</div></div>
+            <div class="l pct10"><i class="fh1"></i></div>
+            </div>-->
+            <div class="ovh mt10"> <img src="css/images/num.png" alt="" class="pct100"> 
+              <!--<div class="l"><i class="fh2 mt5 l"></i><div class="note3 p5 tc f10 l"><span class="cr b db f13">10523905663</span>50个时间求和</div></div>
+            <div class="l"><i class="fh3 mt5 l"></i><div class="note3 p5 tc f10 l"><span class="cr b db f13">37108</span>北京维度</div></div>
+            <div class="l"><i class="fh4 mt5 l"></i><div class="note3 p5 tc f10 l"><span class="cr b db f13">8188</span>该奖品总需人次</div></div>
+            <div class="l"><i class="fh3 mt5 l"></i><div class="note3 p5 tc f10 l"><span class="cr b db f13">10000001</span>原始数</div></div>--> 
+            </div>
+          </div>
+          <div class="note4 p5 ovh mb10">
+            <h1 class="f18">计算结果</h1>
+            <ol>
+              <p>1)求和：5190740371 (上面50条参与记录的时间取值相加)</p>
+              <p>2)随机城市　<strong>天津市</strong>　经度:<strong>54784</strong> 纬度：<strong>21541</strong></p>
+              <p>3)求余：(5190740371 + 21541) % 360 (奖品所需人次) =　<strong>275</strong> (余数) </p>
+              <p>4)<strong>275</strong> (余数) + 10000001 = <strong class="bgr wh pl10 pr10 f14 bra m5">幸运号码：10000276</strong></p>
+            </ol>
+             </div>
+          <div class="mb10">
+            <h3 class="bgr wh p5 f14">幸运号码计算规则</h3>
+            <div class="note4 p5">
+              <p>1. 奖品的最后一个号码分配完毕后，将公示该分配时间点前本站全部奖品的最后50个参与时间；<br>
+                2. 将这50个时间的数值进行求和（得出数值A）（每个时间按时、分、秒、毫秒的顺序组合，如20:15:25.362则为201525362）；<br>
+                3. 取公布的全球随机城市的纬度 (一个五位数值B）；<br>
+                4.（数值A+数值B）除以该奖品总需人次得到的余数 + 原始数 10000001，得到最终幸运号码，拥有该幸运号码者，直接获得该奖品。</p>
+            </div>
+          </div>
+          <h3 class="mb10">截止该奖品最后夺宝时间【2014-11-19 21:05:21.165】最后50条全站参与记录</h3>
+          <ul class="xuLi">
+            <li>
+              <p>2014-11-19     21:05:21.165<span class="b cr ml5">210521165</span> <br>
+                dongchongxiang2***@163.com<br>
+                (第154期) MacBook Air 13.3英寸宽屏笔记本电脑     2人次</p>
+            </li>
+            <li>
+              <p>2014-11-19     21:05:21.165<span class="b cr ml5">210521165</span> <br>
+                asha474890***@163.com<br>
+                (第491期) iPhone6 Plus 5.5英寸 16G     2人次</p>
+            </li>
+            <li>
+              <p>2014-11-19     21:05:18.951<span class="b cr ml5">210521165</span><br>
+                183****7912@163.com<br>
+                (第491期) iPhone6 Plus 5.5英寸 16G     1人次</p>
+            </li>
+            <li>
+              <p>2014-11-19     21:05:18.176<span class="b cr ml5">210521165</span><br>
+                183****3215@163.com<br>
+                (第491期) iPhone6 Plus 5.5英寸 16G     1人次</p>
+            </li>
+            <li>
+              <p>2014-11-19     21:05:16.811<span class="b cr ml5">210521165</span><br>
+                我也要夺<br>
+                (第285期) iPad Air（16G WiFi版）     5人次</p>
+            </li>
+          </ul>
+          <a href="" class="db tc abtn h24 lh25 fa cr b mt10 mb10">点击加载更多 >></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
+<footer id="footer" class="fix inline_box">
+  <div id="butten1" class="sel inline_three naf"><a href="http://eshop.tiens.com" target="_blank" class="f14"><strong>移动商城</strong></a></div>
+  <div id="butten2" class="inline_three naf"><a href="javascript:void(0)" class="f14"><strong>精彩活动</strong></a>
+    <ul>
+      <li><a href="sd-jilu.html" class="f14">晒单记录</a></li>
+      <li><a href="xywj.html" class="f14">幸运玩家</a></li>
+<li><a href="falv.html" class="f14">法律声明</a></li>
+    </ul>
+  </div>
+  <div id="butten2" class="inline_three naf"><a href="javascript:void(0)" class="no f14"><strong>个人中心</strong></a></span>
+    <ul>
+       <li><a href="goldcoin.html" class="f14">我的金币</a></li>
+      <li><a href="goldcoin-jilu.html" class="f14">金币收支</a></li>
+<li><a href="duihuan.html" class="f14">我的兑换</a></li>
+      <li><a href="cyjilu.html" class="f14">参与记录</a></li>
+      <li><a href="guanzhu.html" class="f14">关注列表</a></li>
+      <li><a href="TiensCloud/myspace.html" class="f14">我的云空间</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

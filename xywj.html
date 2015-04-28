@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if IE]>
+<script type="text/javascript" src="css/js/html5.min.js"></script>
+<![endif]-->
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="css/js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+		$(".toggle").click(function(){
+		$(this).toggleClass("sel");
+		$(".nav").toggle();
+vh=$(".nav").height()+64;
+		if($(".nav").is(":visible")==false){
+			$("#content").css("margin-top","54px");}else{$("#content").css("margin-top",vh);}
+		})
+	//顶部菜单
+$(".naf").click(function(){
+	if($("ul",$(this)).hasClass("sel")){
+    $("ul",$(this)).removeClass("sel");}
+     else {
+			 $("#footer").find(".sel").removeClass("sel");
+			 $("ul",$(this)).attr("class","sel"); }
+	})
+//顶部菜单结束
+})</script>
+<title>1元购</title>
+</head>
+<body>
+<header class="p5" id="header"><a href="javascript:history.go(-1)" class="abs M-left cb wt60 f16 db">返回</a><a href="index.html" class="abs M-right db wt50"><img src="css/images/logo.png" alt="" width="40"></a>
+  <div class="toggle">查看全部产品</div>
+</header>
+<nav class="nav"> <a href="list.html"><span class="f12">3C产品</span></a> <a href="list.html"><span class="f12">创意产品</span></a> <a href="list.html"><span class="f12">健康产品</span></a> <a href="list.html"><span class="f12">生活类</span></a> <a href="list.html"><span class="f12">美妆护肤</span></a><a href="list.html"><span class="f12">保健食品</span></a></nav>
+<article id="content">
+<img src="images/sdc.jpg".jpg" alt="" class="pct100 mb10">
+  <section class="p10">
+    <ul class="sd">
+      <li><img src="images/sd.jpg" alt="">
+        <div class="sdR">
+          <h1 class="f18 fa mb5 cgr">Wecha*****name</h1>
+          <h1 class="mb10 f16 fa nb">[488期] Macbook Pro 128G</h1>
+          <h1 class="f14 nb">当期中奖号码： 100000237</h1>
+          <h1 class="f14 nb">当期参与号码：100000237，10003462，10003462，10003462，10003462 </h1>
+        </div>
+      </li>
+      <li><img src="images/sd.jpg" alt="">
+        <div class="sdR">
+          <h1 class="f18 fa mb5 cgr">Wecha*****name</h1>
+          <h1 class="mb10 f16 fa nb">[488期] Macbook Pro 128G</h1>
+          <h1 class="f14 nb">当期中奖号码： 100000237</h1>
+          <h1 class="f14 nb">当期参与号码：100000237，10003462，10003462，10003462，10003462 </h1>
+        </div>
+      </li>
+      <li><img src="images/sd.jpg" alt="">
+        <div class="sdR">
+          <h1 class="f18 fa mb5 cgr">Wecha*****name</h1>
+          <h1 class="mb10 f16 fa nb">[488期] Macbook Pro 128G</h1>
+          <h1 class="f14 nb">当期中奖号码： 100000237</h1>
+          <h1 class="f14 nb">当期参与号码：100000237，10003462，10003462，10003462，10003462 </h1>
+        </div>
+      </li>
+      <li><img src="images/sd.jpg" alt="">
+        <div class="sdR">
+          <h1 class="f18 fa mb5 cgr">Wecha*****name</h1>
+          <h1 class="mb10 f16 fa nb">[488期] Macbook Pro 128G</h1>
+          <h1 class="f14 nb">当期中奖号码： 100000237</h1>
+          <h1 class="f14 nb">当期参与号码：100000237，10003462，10003462，10003462，10003462 </h1>
+        </div>
+      </li>
+    </ul>
+    <!--<div class="inline_box"><div class="inline_two"><a href="" class="db tc abtn bgr wh h24 lh25 mr5"> << </a></div><div class="inline_two"><a href="" class="db tc abtn bgr wh h24 lh25 ml5"> >></a></div> </div>-->
+    <a href="" class="db tc abtn h24 lh25 fa cr b mt10 mb10">点击加载更多 >></a>
+  </section>
+</article>
+<footer id="footer" class="fix inline_box">
+  <div id="butten1" class="sel inline_three naf"><a href="http://eshop.tiens.com" target="_blank" class="f14"><strong>移动商城</strong></a></div>
+  <div id="butten2" class="inline_three naf"><a href="javascript:void(0)" class="f14"><strong>精彩活动</strong></a>
+    <ul>
+      <li><a href="sd-jilu.html" class="f14">晒单记录</a></li>
+      <li><a href="xywj.html" class="f14">幸运玩家</a></li>
+<li><a href="falv.html" class="f14">法律声明</a></li>
+    </ul>
+  </div>
+  <div id="butten2" class="inline_three naf"><a href="javascript:void(0)" class="no f14"><strong>个人中心</strong></a>
+    <ul>
+       <li><a href="goldcoin.html" class="f14">我的金币</a></li>
+      <li><a href="goldcoin-jilu.html" class="f14">金币收支</a></li>
+<li><a href="duihuan.html" class="f14">我的兑换</a></li>
+      <li><a href="cyjilu.html" class="f14">参与记录</a></li>
+      <li><a href="guanzhu.html" class="f14">关注列表</a></li>
+      <li><a href="TiensCloud/myspace.html" class="f14">我的云空间</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

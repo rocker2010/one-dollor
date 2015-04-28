@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if IE]>
+<script type="text/javascript" src="css/js/html5.min.js"></script>
+<![endif]-->
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="css/js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+		$(".toggle").click(function(){
+		$(this).toggleClass("sel");
+		$(".nav").toggle();
+vh=$(".nav").height()+64;
+		if($(".nav").is(":visible")==false){
+			$("#content").css("margin-top","54px");}else{$("#content").css("margin-top",vh);}
+		})
+
+$(".naf").click(function(){
+	if($("ul",$(this)).hasClass("sel")){
+    $("ul",$(this)).removeClass("sel");}
+     else {
+			 $("#footer").find(".sel").removeClass("sel");
+			 $("ul",$(this)).attr("class","sel");}
+	})
+})
+</script>
+<title>1元购</title>
+</head>
+
+<body>
+<header class="p5" id="header"><a href="javascript:history.go(-1)" class="abs M-left cb wt60 f16 db">返回</a><a href="index.html" class="abs M-right db wt50"><img src="css/images/logo.png" alt="" width="40"></a>
+  <div class="toggle">查看全部产品</div>
+</header>
+<nav class="nav"> <a href="list.html" class="sel"><span class="f12">3C产品</span></a> <a href="list.html"><span class="f12">创意产品</span></a> <a href="list.html"><span class="f12">健康产品</span></a> <a href="list.html"><span class="f12">生活类</span></a> <a href="list.html"><span class="f12">美妆护肤</span></a><a href="list.html"><span class="f12">保健食品</span></a></nav>
+<article id="content">
+  <section class="p10 f14">
+    <h1 class="p5 line mb10 f18"><img src="css/images/jb.png" alt="" width="30" class="mr10 vb">我拥有的天狮金币: <span class="cr vb">0</span><a href="goldcoin.html" class="ml10 cbl nb">[获得金币]</a></h1>
+    
+<ul class="jilu">
+  <li>
+  2014年11月15日
+  <p><span class="b cy">金币收入</span></p>
+  <p>商城积分兑换 <span class="b cy">5</span>枚</p>
+  </li>
+  <li>
+  <span>2014年11月13日</span>
+  <p><span class="b cy">金币收入</span></p>
+  <p>天狮"一元夺宝"充值扩容 <span class="b cy">5</span>枚</p>
+
+  </li>
+  <li>
+  <span>2014年11月13日</span>
+  <p><span class="b cy">金币收入</span></p>
+  <p>邀请好友参与夺宝赠送金币 <span class="b cy">1</span>枚</p>
+  </li>
+  <li>
+ <span>2014年11月12日</span>
+ <p><span class="b cr">金币支出</span></p>
+  <p>参与(第488期)iPhone6 4.7英寸 128G 夺宝，消费 <span class="b cr">2</span>枚</p>
+  </li>
+  <li>
+<span>2014年11月10日</span>
+ <p><span class="b cr">金币支出</span></p>
+  <p>参与(第488期)iPhone6 4.7英寸 128G 夺宝，消费 <span class="b cr">2</span>枚</p>
+  </li>
+</ul>      
+
+    
+    <input type="button" class="btn db mb10 pct100 f16" value="点击加载更多 >>">
+      
+    
+  </section>
+</article>
+<footer id="footer" class="fix inline_box">
+  <div id="butten1" class="sel inline_three naf"><a href="http://eshop.tiens.com" target="_blank" class="f14"><strong>移动商城</strong></a></div>
+  <div id="butten2" class="inline_three naf"><a href="javascript:void(0)" class="f14"><strong>精彩活动</strong></a>
+    <ul>
+      <li><a href="sd-jilu.html" class="f14">晒单记录</a></li>
+      <li><a href="xywj.html" class="f14">幸运玩家</a></li>
+    </ul>
+  </div>
+  <div id="butten2" class="inline_three naf"><a href="javascript:void(0)" class="no f14"><strong>个人中心</strong></a>
+    <ul>
+      <li><a href="goldcoin.html" class="f14">我的金币</a></li>
+      <li><a href="goldcoin-jilu.html" class="f14">金币收支</a></li>
+<li><a href="duihuan.html" class="f14">我的兑换</a></li>
+      <li><a href="cyjilu.html" class="f14">参与记录</a></li>
+      <li><a href="guanzhu.html" class="f14">关注列表</a></li>
+      <li><a href="TiensCloud/myspace.html" class="f14">我的云空间</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

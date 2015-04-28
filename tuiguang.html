@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if IE]>
+<script type="text/javascript" src="css/js/html5.min.js"></script>
+<![endif]-->
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="css/js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#share").click(function(){
+		$("body").append("<div class='maskA'><div><img src='css/images/jiantou.png' height='170'></div></div>");
+		$(".maskA").click(function(){
+       $(".maskA").remove();
+        })
+		});
+})</script>
+<title>1元购</title>
+</head>
+
+<body style="background: rgba(110,0,0,1);">
+<article id="content" style="margin-top:0px; margin-bottom:0; overflow:hidden">
+<img src="images/cj.jpg" alt="" class="pct100">
+<div class="tc mt10 mb10" ><a href="javascript:void(0)" class="abtn f18 mr15" id="share" style="background: yellow;padding: 10px;">进入天狮E商城</a><a href="main.html" class="abtn f18" style=" background: yellow;padding: 10px;">进入天狮一元夺宝</a></div>
+</article> 
+</body>
+</html>
