@@ -145,9 +145,6 @@ p {
 .int25 {
 	text-indent:25px;
 }
-.ovh {
-	overflow: hidden;
-}
 .all {
 	width:100%;
 	height:100%
@@ -1049,6 +1046,7 @@ p {
 .next:before {
 	font-family: "iconfont" !important;
 	content: "\e600";
+	margin-right: 4px;
 }
 .jg {
 	height: 35px;
@@ -1520,7 +1518,31 @@ a.M-left:hover, a.M-right:hover {
 	height: 33px;
 	-webkit-appearance: none;
 	position: relative;
-	top: 2px;
+}
+.selBox {
+	position:relative;
+	display:inline-block;
+	margin-left: -5px;
+}
+.selMenu {
+	padding: 2px 20px 2px 2px;
+	background: #FFFFFF;
+	border: 1px #ABADB3  solid;
+	-webkit-appearance: none;
+	position: relative;
+	color: #ABADB3;
+	height: 30px;
+	font-size: 14px;
+	border-radius: 3px;
+}
+.sj {
+position: absolute;
+border-width: 5px;
+border-color: #B9B9B9 transparent transparent transparent;
+border-style: solid;
+top: 50%;
+right: 10px;
+margin-top: -2px;
 }
 .flex5 input[type='text'] {
 	width:45px;

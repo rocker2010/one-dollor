@@ -54,30 +54,71 @@ $(".naf").click(function(){
 </head>
 
 <body>
-<header class="p5" id="header"><a href="javascript:history.go(-1)" class="abs M-left cb wt60 f16 db">返回</a><a href="index.html" class="abs M-right db wt50"><img src="css/images/logo.png" alt="" width="40"></a><div class="toggle">查看全部产品</div></header>
+<header class="p5" id="header"><a href="javascript:history.go(-1)" class="abs M-left cb wt60 f16 db">返回</a><a href="index.html" class="abs M-right db wt50"><img src="css/images/logo.png" alt="" width="40"></a>
+  <div class="toggle">查看全部产品</div>
+</header>
 <nav class="nav"> <a href="list.html"><span class="f12">3C产品</span></a> <a href="list.html"><span class="f12">创意产品</span></a> <a href="list.html"><span class="f12">健康产品</span></a> <a href="list.html"><span class="f12">生活类</span></a> <a href="list.html"><span class="f12">美妆护肤</span></a><a href="list.html"><span class="f12">保健食品</span></a></nav>
 <article id="content">
   <section class="pro">
     <ul>
       <li class="probox bgl line2 box mb0">
-        <div class="flex1 tc mr15"><div class="proImg"><a href="view.html"><img src="images/pro.jpg" alt=""></a></div></div>
+        <div class="flex1 tc mr15">
+          <div class="proImg"><a href="view.html"><img src="images/pro.jpg" alt=""></a></div>
+        </div>
         <div class="flex5 pw">
           <h1 class="f18"><span class="nb mr5 cr">(第488期)</span>iPhone6 4.7英寸 128G <span class="cr">至大之作,亦是至薄之作(颜色随机)</span></h1>
           <p class="mt10 mb10 f18"><span class="mr5">兑换数量：<i class="min"></i>
-          <input type="text" value="1" size="4" class="tc h33 mr5 ml5" id=""><i class="add"></i></span>
-          </p>
+            <input type="text" value="1" size="4" class="tc h33 mr5 ml5" id="">
+            <i class="add"></i></span> </p>
           <p class="rel f18"><i class="jb"></i><span class="pl30">总需：<span class=" cgr">9388</span> 枚天狮金币</span></p>
         </div>
       </li>
     </ul>
-<div class="p15 bgwh">
-<h1 class="tc mb10">请输入您的联系方式</h1>
-<p class="mb10  ovh"><span class="pct20 tr dib">姓  名：</span><input type="text" placeholder="请输入您的真实姓名" class="pct80 p5"><!--<span class="db pct70 r">出错信息！</span>--></p>
-<p class="mb10  ovh"><span class="pct20 tr dib">手机号：</span><input type="text" placeholder="请输入手机号码" class="pct80 p5"></p>
-<p class="mb10  ovh"><span class="pct20 tr dib">邮  箱：</span><input type="text" placeholder="请输入您的邮箱地址" class="pct80 p5"></p>
-<p class="mb10  ovh"><span class="pct20 tr dib">地  址：</span><input type="text" placeholder="请输入您的邮寄地址" class="pct80 p5"></p>
-<p class="ovh"><input type="button" class="btn f16 pct100" value="确认兑换"></p></div>
-
+    <div class="p15 bgwh">
+      <h1 class="tc mb10">请输入您的联系方式</h1>
+      <p class="mb10  ovh"><span class="pct20 tr dib">姓  名：</span><input type="text" placeholder="请输入您的真实姓名" class="pct80 p5">
+        <!--<span class="db pct70 r">出错信息！</span>--></p>
+      <p class="mb10  ovh"><span class="pct20 tr dib">手机号：</span><input type="text" placeholder="请输入手机号码" class="pct80 p5">
+      </p>
+      <p class="mb10  ovh"><span class="pct20 tr dib">邮  箱：</span><input type="text" placeholder="请输入您的邮箱地址" class="pct80 p5">
+      </p>
+      <div class="mb10  ovh"><span class="pct20 tr dib"></span>
+        <div class="selBox">
+          <select name="" class="selMenu">
+            <option>选择城市</option>
+            <option>北京</option>
+            <option>天津</option>
+            <option>广州</option>
+            <option>重庆</option>
+          </select>
+          <span class="sj"></span></div>
+        <span class="next"></span>
+        <div class="selBox">
+          <select name="" class="selMenu">
+            <option>区</option>
+            <option>北京</option>
+            <option>天津</option>
+            <option>广州</option>
+            <option>重庆</option>
+          </select>
+          <span class="sj"></span></div>
+        <span class="next"></span>
+        <div class="selBox">
+          <select name="" class="selMenu">
+            <option>县</option>
+            <option>北京</option>
+            <option>天津</option>
+            <option>广州</option>
+            <option>重庆</option>
+          </select>
+          <span class="sj"></span></div>
+      </div>
+      <p class="mb10  ovh"><span class="pct20 tr dib">地  址：</span><input type="text" placeholder="请输入您的邮寄地址" class="pct80 p5">
+      </p>
+      <p class="ovh">
+        <input type="button" class="btn f16 pct100" value="确认兑换">
+      </p>
+    </div>
   </section>
 </article>
 <footer id="footer" class="fix inline_box">
@@ -91,7 +132,7 @@ $(".naf").click(function(){
   </div>
   <div id="butten2" class="inline_three naf"><a href="javascript:void(0)" class="no f14"><strong>个人中心</strong></a></span>
     <ul>
-       <li><a href="goldcoin.html" class="f14">我的金币</a></li>
+      <li><a href="goldcoin.html" class="f14">我的金币</a></li>
       <li><a href="goldcoin-jilu.html" class="f14">金币收支</a></li>
       <li><a href="duihuan.html" class="f14">我的兑换</a></li>
       <li><a href="cyjilu.html" class="f14">参与记录</a></li>
